@@ -3,7 +3,10 @@
 ## Function to create a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
- 
+  j<-NULL
+  set<-function(y){
+  x<<-y
+  j<<-NULL
 }
 get<-function() x
 setmatrix<-function(solve) j<<- solve
